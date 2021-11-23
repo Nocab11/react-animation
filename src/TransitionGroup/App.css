@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+
+.todo {
+    border: 1px solid black;
+    padding: 5px 10px;
+    margin: 15px;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+.todo-exit-active{
+    animation: fade-out 500ms forwards ;
+}
+.todo-enter-active{
+    animation: fade-in 500ms forwards;
+}
+
